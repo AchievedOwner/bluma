@@ -1,0 +1,75 @@
+﻿@page "/elements/table"
+<PageHeader Title="Table">
+
+</PageHeader>
+
+<Example>
+    <RunContent>
+        <Table>
+            <HeaderContent>
+                <TableRow>
+                    <TableHeader>ID</TableHeader>
+                    <TableHeader>Name</TableHeader>
+                    <TableHeader>Age</TableHeader>
+                    <TableHeader>Role</TableHeader>
+                </TableRow>
+            </HeaderContent>
+            <BodyContent>
+                <TableRow>
+                    <TableCell>1</TableCell>
+                    <TableCell>June</TableCell>
+                    <TableCell>22</TableCell>
+                    <TableCell>Admin</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>2</TableCell>
+                    <TableCell>James</TableCell>
+                    <TableCell>38</TableCell>
+                    <TableCell>User</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>3</TableCell>
+                    <TableCell>Arsenal</TableCell>
+                    <TableCell>58</TableCell>
+                    <TableCell>Approver</TableCell>
+                </TableRow>
+            </BodyContent>
+        </Table>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Table>
+            <HeaderContent>
+                <TableRow>
+                    <TableHeader>ID</TableHeader>
+                    <TableHeader>Name</TableHeader>
+                    <TableHeader>Age</TableHeader>
+                    <TableHeader>Role</TableHeader>
+                </TableRow>
+            </HeaderContent>
+            <BodyContent>
+                <TableRow>
+                    <TableCell>1</TableCell>
+                    <TableCell>June</TableCell>
+                    <TableCell>22</TableCell>
+                    <TableCell>Admin</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>2</TableCell>
+                    <TableCell>James</TableCell>
+                    <TableCell>38</TableCell>
+                    <TableCell>User</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>3</TableCell>
+                    <TableCell>Arsenal</TableCell>
+                    <TableCell>58</TableCell>
+                    <TableCell>Approver</TableCell>
+                </TableRow>
+            </BodyContent>
+        </Table>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

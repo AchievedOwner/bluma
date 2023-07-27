@@ -1,0 +1,27 @@
+﻿<Block>
+    @if ( !string.IsNullOrEmpty(Title) )
+    {
+        <Title>@Title</Title>
+    }
+
+    @if ( Description is not null )
+    {
+        <SubTitle>@Description</SubTitle>
+    }
+
+    <Columns>
+        <Column Size="Col.Size.Is6">
+            @RunContent
+        </Column>
+        <Column Size="Col.Size.Is6">
+            @CodeContent
+        </Column>
+    </Columns>
+</Block>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public RenderFragment? Description { get; set; }
+    [Parameter] public RenderFragment? RunContent { get; set; }
+    [Parameter] public RenderFragment? CodeContent { get; set; }
+}

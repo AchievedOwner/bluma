@@ -1,0 +1,254 @@
+﻿@page "/elements/button"
+
+<PageHeader Title="按钮（Button）">
+    The classic button, in different colors, sizes, and states
+</PageHeader>
+
+<Block>The button is an essential element of any design. It's meant to look and behave as an interactive element of your page.</Block>
+
+<Example>
+    <RunContent>
+        <Button>Button</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @("<Button>Button</Button>")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Title>Colors</Title>
+<Example>
+    <RunContent>
+        <Button Color="BtnColor.White">White</Button>
+        <Button Light>Light</Button>
+        <Button Color="BtnColor.Dark">Dark</Button>
+        <Button Color="BtnColor.Black">Black</Button>
+        <Button Color="BtnColor.Text">Text</Button>
+        <Button Color="BtnColor.Ghost">Ghost</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Color=""BtnColor.White"">White</Button>
+        <Button Light>Light</Button>
+        <Button Color=""BtnColor.Dark"">Dark</Button>
+        <Button Color=""BtnColor.Black"">Black</Button>
+        <Button Color=""BtnColor.Text"">Text</Button>
+        <Button Color=""BtnColor.Ghost"">Ghost</Button>")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example>
+    <RunContent>
+        <Button Color="BtnColor.Primary">Primary</Button>
+        <Button Color="BtnColor.Info">Info</Button>
+        <Button Color="BtnColor.Success">Success</Button>
+        <Button Color="BtnColor.Warning">Warning</Button>
+        <Button Color="BtnColor.Danger">Danger</Button>
+        <Button Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Color=""BtnColor.Primary"">Primary</Button>
+        <Button Color=""BtnColor.Info"">Info</Button>
+        <Button Color=""BtnColor.Success"">Success</Button>
+        <Button Color=""BtnColor.Warning"">Warning</Button>
+        <Button Color=""BtnColor.Danger"">Danger</Button>
+        <Button Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example>
+    <Description>
+        Each color now comes in its light version.
+    </Description>
+    <RunContent>
+        <Button Light Color="BtnColor.Primary">Primary</Button>
+        <Button Light Color="BtnColor.Info">Info</Button>
+        <Button Light Color="BtnColor.Success">Success</Button>
+        <Button Light Color="BtnColor.Warning">Warning</Button>
+        <Button Light Color="BtnColor.Danger">Danger</Button>
+        <Button Light Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Light Color=""BtnColor.Primary"">Primary</Button>
+        <Button Light Color=""BtnColor.Info"">Info</Button>
+        <Button Light Color=""BtnColor.Success"">Success</Button>
+        <Button Light Color=""BtnColor.Warning"">Warning</Button>
+        <Button Light Color=""BtnColor.Danger"">Danger</Button>
+        <Button Light Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Sizes">
+    <Description>
+
+    </Description>
+    <RunContent>
+        <Button Size="Size.Small">Small</Button>
+        <Button>Default</Button>
+        <Button Size="Size.Normal">Normal</Button>
+        <Button Size="Size.Medium">Medium</Button>
+        <Button Size="Size.Large">Large</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Size=""Size.Small"">Small</Button>
+        <Button>Default</Button>
+        <Button Size=""Size.Normal"">Normal</Button>
+        <Button Size=""Size.Medium"">Medium</Button>
+        <Button Size=""Size.Large"">Large</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Displays">
+    <Description>
+
+    </Description>
+    <RunContent>
+        <Button FullWidth Size="Size.Small">Small</Button>
+        <Button FullWidth>Default</Button>
+        <Button FullWidth Size="Size.Normal">Normal</Button>
+        <Button FullWidth Size="Size.Medium">Medium</Button>
+        <Button FullWidth Size="Size.Large">Large</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button FullWidth Size=""Size.Small"">Small</Button>
+        <Button FullWidth>Default</Button>
+        <Button FullWidth Size=""Size.Normal"">Normal</Button>
+        <Button FullWidth Size=""Size.Medium"">Medium</Button>
+        <Button FullWidth Size=""Size.Large"">Large</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Outlined">
+    <Description>
+    </Description>
+    <RunContent>
+        <Button Outlined Color="BtnColor.Primary">Primary</Button>
+        <Button Outlined Color="BtnColor.Info">Info</Button>
+        <Button Outlined Color="BtnColor.Success">Success</Button>
+        <Button Outlined Color="BtnColor.Warning">Warning</Button>
+        <Button Outlined Color="BtnColor.Danger">Danger</Button>
+        <Button Outlined Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Outlined Color=""BtnColor.Primary"">Primary</Button>
+        <Button Outlined Color=""BtnColor.Info"">Info</Button>
+        <Button Outlined Color=""BtnColor.Success"">Success</Button>
+        <Button Outlined Color=""BtnColor.Warning"">Warning</Button>
+        <Button Outlined Color=""BtnColor.Danger"">Danger</Button>
+        <Button Outlined Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Inverted">
+    <Description>
+        The text color becomes the background color, and vice-versa
+    </Description>
+    <RunContent>
+        <Button Inverted Color="BtnColor.Primary">Primary</Button>
+        <Button Inverted Color="BtnColor.Info">Info</Button>
+        <Button Inverted Color="BtnColor.Success">Success</Button>
+        <Button Inverted Color="BtnColor.Warning">Warning</Button>
+        <Button Inverted Color="BtnColor.Danger">Danger</Button>
+        <Button Inverted Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Inverted Color=""BtnColor.Primary"">Primary</Button>
+        <Button Inverted Color=""BtnColor.Info"">Info</Button>
+        <Button Inverted Color=""BtnColor.Success"">Success</Button>
+        <Button Inverted Color=""BtnColor.Warning"">Warning</Button>
+        <Button Inverted Color=""BtnColor.Danger"">Danger</Button>
+        <Button Inverted Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Rounded">
+    <Description>
+    </Description>
+    <RunContent>
+        <Button Rounded Color="BtnColor.Primary">Primary</Button>
+        <Button Rounded Color="BtnColor.Info">Info</Button>
+        <Button Rounded Color="BtnColor.Success">Success</Button>
+        <Button Rounded Color="BtnColor.Warning">Warning</Button>
+        <Button Rounded Color="BtnColor.Danger">Danger</Button>
+        <Button Rounded Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Rounded Color=""BtnColor.Primary"">Primary</Button>
+        <Button Rounded Color=""BtnColor.Info"">Info</Button>
+        <Button Rounded Color=""BtnColor.Success"">Success</Button>
+        <Button Rounded Color=""BtnColor.Warning"">Warning</Button>
+        <Button Rounded Color=""BtnColor.Danger"">Danger</Button>
+        <Button Rounded Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Loading">
+    <Description>
+    </Description>
+    <RunContent>
+        <Button Loading Color="BtnColor.Primary">Primary</Button>
+        <Button Loading Color="BtnColor.Info">Info</Button>
+        <Button Loading Color="BtnColor.Success">Success</Button>
+        <Button Loading Color="BtnColor.Warning">Warning</Button>
+        <Button Loading Color="BtnColor.Danger">Danger</Button>
+        <Button Loading Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Loading Color=""BtnColor.Primary"">Primary</Button>
+        <Button Loading Color=""BtnColor.Info"">Info</Button>
+        <Button Loading Color=""BtnColor.Success"">Success</Button>
+        <Button Loading Color=""BtnColor.Warning"">Warning</Button>
+        <Button Loading Color=""BtnColor.Danger"">Danger</Button>
+        <Button Loading Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Disabled">
+    <Description>
+    </Description>
+    <RunContent>
+        <Button Disabled Color="BtnColor.Primary">Primary</Button>
+        <Button Disabled Color="BtnColor.Info">Info</Button>
+        <Button Disabled Color="BtnColor.Success">Success</Button>
+        <Button Disabled Color="BtnColor.Warning">Warning</Button>
+        <Button Disabled Color="BtnColor.Danger">Danger</Button>
+        <Button Disabled Color="BtnColor.Link">Link</Button>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Button Disabled Color=""BtnColor.Primary"">Primary</Button>
+        <Button Disabled Color=""BtnColor.Info"">Info</Button>
+        <Button Disabled Color=""BtnColor.Success"">Success</Button>
+        <Button Disabled Color=""BtnColor.Warning"">Warning</Button>
+        <Button Disabled Color=""BtnColor.Danger"">Danger</Button>
+        <Button Disabled Color=""BtnColor.Link"">Link</Button>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

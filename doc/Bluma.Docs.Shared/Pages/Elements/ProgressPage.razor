@@ -1,0 +1,73 @@
+﻿@page "/elements/progress"
+
+<PageHeader Title="Progress">
+    Native HTML progress bars
+</PageHeader>
+
+<Example>
+    <RunContent>
+        <Progress Value="15"/>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"<Progress Value=""15""/>")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Colors">
+    <RunContent>
+        <Progress Value="15" Color="Color.Primary"/>
+        <Progress Value="45" Color="Color.Info"/>
+        <Progress Value="80" Color="Color.Success"/>
+        <Progress Value="61" Color="Color.Danger" />
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Progress Value=""15"" Color=""Color.Primary""/>
+        <Progress Value=""45"" Color=""Color.Info""/>
+        <Progress Value=""80"" Color=""Color.Success""/>
+        <Progress Value=""61"" Color=""Color.Danger"" />
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Size">
+    <RunContent>
+        <Progress Size="Size.Small" Value="15" Color="Color.Primary" />
+        <Progress Size="Size.Normal" Value="45" Color="Color.Info" />
+        <Progress Size="Size.Medium" Value="80" Color="Color.Success" />
+        <Progress Size="Size.Large" Value="61" Color="Color.Danger" />
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+            <Progress Size=""Size.Small""  Value=""15"" Color=""Color.Primary""/>
+            <Progress Size=""Size.Normal"" Value=""45"" Color=""Color.Info""/>
+            <Progress Size=""Size.Medium"" Value=""80"" Color=""Color.Success""/>
+            <Progress Size=""Size.Large""  Value=""61"" Color=""Color.Danger"" />
+            ")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Indeterminate">
+    <Description>
+        If no <code>Value</code> parameter, you can display an indeterminate progress bar. It's used to show that some progress is going on, but the total duration is not yet determined.
+    </Description>
+    <RunContent>
+        <Progress Color="Color.Primary" />
+        <Progress Color="Color.Info" />
+        <Progress Color="Color.Success" />
+        <Progress Color="Color.Danger" />
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+            <Progress Color=""Color.Primary""/>
+            <Progress Color=""Color.Info""/>
+            <Progress Color=""Color.Success""/>
+            <Progress Color=""Color.Danger"" />
+            ")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

@@ -1,0 +1,69 @@
+﻿@page "/elements/tag"
+
+<PageHeader Title="Tag">
+
+</PageHeader>
+
+<Example>
+    <RunContent>
+        <Tag>tag</Tag>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+        @(@"
+        <Tag>tag</Tag>
+            ")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example>
+    <RunContent>
+        <Tag Color="Color.Primary">Primary</Tag>
+        <Tag Color="Color.Link">Link</Tag>
+        <Tag Color="Color.Info">Info</Tag>
+        <Tag Color="Color.Success">Success</Tag>
+        <Tag Color="Color.Warning">Warning</Tag>
+        <Tag Color="Color.Danger">Danger</Tag>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+        @(@"
+        <Tag Color=""Color.Primary"">Primary</Tag>
+        <Tag Color=""Color.Link"">Link</Tag>
+        <Tag Color=""Color.Info"">Info</Tag>
+        <Tag Color=""Color.Success"">Success</Tag>
+        <Tag Color=""Color.Warning"">Warning</Tag>
+        <Tag Color=""Color.Danger"">Danger</Tag>
+        ")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Tags">
+    <Description>
+        Group tag together
+    </Description>
+    <RunContent>
+        <Tags Attached>
+            <Tag Color="Color.Primary">Primary</Tag>
+            <Tag Color="Color.Link">Link</Tag>
+        </Tags>
+        <Tags Attached>
+            <Tag Color="Color.Primary">Primary</Tag>
+            <Tag Delete />
+        </Tags>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Tags Attached>
+            <Tag Color=""Color.Primary"">Primary</Tag>
+            <Tag Color=""Color.Link"">Link</Tag>
+        </Tags>
+        <Tags Attached>
+            <Tag Color=""Color.Primary"">Primary</Tag>
+            <Tag Delete />
+        </Tags>
+            ")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

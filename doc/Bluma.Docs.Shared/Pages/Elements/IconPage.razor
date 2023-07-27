@@ -1,0 +1,90 @@
+﻿@page "/elements/icon"
+
+<PageHeader Title="图标（Icon）">
+    Bulma is compatible with all icon font libraries: Font Awesome 6
+</PageHeader>
+
+<Example>
+    <RunContent>
+        <Icon Name="house-user"/>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"<Icon Name=""house-user""/>")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+<Example Title="Icon Text">
+    <RunContent>
+        <Icon Name="house-user" >
+            Home
+            </Icon>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Icon Name=""house-user"" >
+            Home
+        </Icon>")
+        </CodeHighlight>
+    </CodeContent>
+</Example>
+
+<Example>
+    <RunContent>
+        <Icon Name="info-circle" Color="Color.Info">
+            Information
+        </Icon>
+        <Block>
+            Your package will be delivered on Tuesday at 08:00.
+        </Block>
+        <Icon Name="check-square" Color="Color.Success">
+            Success
+        </Icon>
+        <Block>
+            Your image has been successfully uploaded.
+        </Block>
+        <Icon Name="exclamation-triangle" Color="Color.Warning">
+            Warning
+        </Icon>
+        <Block>
+            Some information is missing from your profile details.
+        </Block>
+        <Icon Name="ban" Color="Color.Danger">
+            Danger
+        </Icon>
+        <Block>
+            There was an error in your submission. Please try again.
+        </Block>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+            @(@"
+        <Icon Name=""info-circle"" Color=""Color.Info"">
+            Information
+        </Icon>
+        <Block>
+            Your package will be delivered on Tuesday at 08:00.
+        </Block>
+        <Icon Name=""check-square"" Color=""Color.Success"">
+            Success
+        </Icon>
+        <Block>
+            Your image has been successfully uploaded.
+        </Block>
+        <Icon Name=""exclamation-triangle"" Color=""Color.Warning"">
+            Warning
+        </Icon>
+        <Block>
+            Some information is missing from your profile details.
+        </Block>
+        <Icon Name=""ban"" Color=""Color.Danger"">
+            Danger
+        </Icon>
+        <Block>
+            There was an error in your submission. Please try again.
+        </Block>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

@@ -1,0 +1,34 @@
+﻿@page "/elements/block"
+
+<PageHeader Title="块元素（Block)">
+    基本的块元素，具备简单的间隙
+</PageHeader>
+
+<Example>
+    <RunContent>
+        <Block>
+            This text is within a <strong>block</strong>.
+        </Block>
+        <Block>
+            This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </Block>
+        <Block>
+            This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+        </Block>
+    </RunContent>
+    <CodeContent>
+        <CodeHighlight CodeLanguage="html">
+        @(@"
+        <Block>
+            This text is within a <strong>block</strong>.
+        </Block>
+        <Block>
+            This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </Block>
+        <Block>
+            This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+        </Block>
+")
+        </CodeHighlight>
+    </CodeContent>
+</Example>

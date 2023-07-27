@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+<NavBar Color="Color.Primary">
+    <BrandContent>
+        <NavBarItem Link="/">
+            Bluma
+        </NavBarItem>
+    </BrandContent>
+    <StartContent>
+        <NavBarItem Link="/components">Components</NavBarItem>
+    </StartContent>
+</NavBar>
+
+<Container BreakPoint="ContainerBreakPoint.Fluid">
+    <Columns>
+        <Column Size="Col.Size.Is2">
+            <Menu>
+                <MenuList>
+                    <MenuListItem Link="/">Home</MenuListItem>
+                </MenuList>
+                <MenuHeader>Elements</MenuHeader>
+                <MenuList>
+                    <MenuListItem Link="/elements/block">Block</MenuListItem>
+                    <MenuListItem Link="/elements/box">Box</MenuListItem>
+                    <MenuListItem Link="/elements/button">Button</MenuListItem>
+                    <MenuListItem Link="/elements/icon">Icon</MenuListItem>
+                    <MenuListItem Link="/elements/image">Image</MenuListItem>
+                    <MenuListItem Link="/elements/progress">Progress</MenuListItem>
+                    <MenuListItem Link="/elements/table">Table</MenuListItem>
+                    <MenuListItem Link="/elements/tag">Tag</MenuListItem>
+                    <MenuListItem Link="/elements/title">Title</MenuListItem>
+                </MenuList>
+                <MenuHeader>Components</MenuHeader>
+                <MenuList>
+                    <MenuListItem Link="/components/menu">Menu</MenuListItem>
+                </MenuList>
+            </Menu>
+        </Column>
+        <Column>@Body</Column>
+    </Columns>
+</Container>
